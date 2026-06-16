@@ -24,7 +24,7 @@ pip install numpy scipy matplotlib
 ## 🚀 Quick start – analysing a single spectrum
 
 ```bash
-./gamma-spectrum-analysis.py "Spectrum.xml"
+./gamma-spectrum-analysis.py --cutoff 0.2 --tolerance 10 "spectrum.xml"
 ```
 
 * The script reads the XML file and outputs:
@@ -40,7 +40,7 @@ pip install numpy scipy matplotlib
 If you have a separate background measurement you can supply it as the second positional argument:
 
 ```bash
-./gamma-spectrum-analysis.py target.xml background.xml
+./gamma-spectrum-analysis.py --cutoff 0.2 --tolerance 10 spectrum.xml background.xml
 ```
 
 The script will:
